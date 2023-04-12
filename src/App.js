@@ -8,9 +8,9 @@ function App() {
   console.log(imageUrls);
   return (
     <>
-      <Header title='Mammal Judge' />
-      <Main heading="Who's you're favorite Mammal?" imageUrls={imageUrls} />
-      <Footer message='Let us know your favorite!; Created by B. Halliwell' />
+      <Header title='Votes for mammals' />
+      <Main heading="Who's you're favorite mammal?" imageUrls={imageUrls} />
+      <Footer message='Thanks for voting! Created by B. Halliwell' />
     </>
   );
 }
