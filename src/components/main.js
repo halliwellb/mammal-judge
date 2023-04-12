@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col'
 
 export default class Main extends Component {
     render() {
-        const beastImages = this.props.imageUrls;
+        const beastImages = this.props.allBeasts;
         const mystyle = {
             display: 'flex',
             color: 'red',
@@ -189,20 +189,30 @@ class HornedMammals extends Component {
         super(props);
         this.state = {
             numClicks: 0,
+            title: this.props.title,
         };
     }
 
 
-    handleClick = () => {
+    handleClick = (event) => {
         let newCount = this.state.numClicks + 1;
-        
+        console.log(event.target);
+        console.log(event.target.textContent);
+        let userClickedTitle = event.target.textContent;
+
+        let findMatchingTitle = this.props.title.map(() => {
+            if (userClickedTitle === this.props.allBeasts.title) {
+                alert("Please select");
+            }
+            return console.log(findMatchingTitle);
+        })
+
         this.setState({
             numClicks: newCount,
         });
     }
 
     render() {
-        console.log(this.props.imageUrls);
         return (
             <div onClick={this.handleClick}>
                 <h2>{this.props.title}</h2>

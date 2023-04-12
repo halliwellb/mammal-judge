@@ -27,3 +27,13 @@ Start time: 8:00pm
 Finish time: 8:45pm
 
 Actual time needed to complete: 45 minutes
+
+Number and name of feature: Feature #4: Gallery of Horns
+
+Estimate of time needed to complete: 150 minutes
+
+Start time: 4:30pm
+
+Finish time: :pm
+
+Actual time needed to complete:  minutes
