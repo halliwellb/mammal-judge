@@ -11,13 +11,10 @@ class Footer extends Component {
       fontSize: '20px',
     };
     return (
-      <footer>
-        <p style={mystyle}>
-          {this.props.message}
-        </p>
-      </footer>
-    );
-  }
-}
-
-export default Footer;
+        <footer>
+         <p style={mystyle}>{this.props.closer}</p>
+         </footer>
+       )
+     }
+ }
+ export default Footer
