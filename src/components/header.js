@@ -18,7 +18,7 @@ class Header extends Component {
       flexDirection: 'column',
       alignItems: 'center',
       alignContent: 'center',
-      fontSize: '30px',
+      fontSize: '32px',
     };
 
     return (
